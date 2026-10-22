@@ -722,6 +722,67 @@ button {
     margin-top: 45px
 }
 
+.stockpro-preview {
+    min-height: 490px;
+    padding: 30px 24px;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f7f8fc, #e9ecf6);
+    text-decoration: none;
+}
+
+.stockpro-preview .preview-tag {
+    position: static;
+    align-self: flex-start;
+    margin-top: 14px;
+}
+
+.stockpro-window {
+    width: 100%;
+    min-height: 410px;
+    display: grid;
+    grid-template-columns: 27% 73%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #f6f7fb;
+    color: #17233b;
+    box-shadow: 0 16px 38px #11182730;
+    font-family: var(--font);
+}
+
+.stockpro-sidebar {
+    padding: 17px 12px;
+    background: #fff;
+    color: #7160ec;
+    font-size: 8px;
+}
+
+.stockpro-sidebar strong { display: block; color: #17233b; font-size: 15px; }
+.stockpro-sidebar strong span:first-child { color: #7058ed; }
+.stockpro-sidebar strong span:last-child { color: #7058ed; }
+.stockpro-sidebar>small { display: block; margin: 2px 0 20px 22px; font-size: 5px; letter-spacing: 1px; color: #9aa2b4; }
+.stockpro-workspace { padding: 9px 7px; margin-bottom: 14px; border: 1px solid #ececf5; border-radius: 8px; color: #26334b; font-weight: 700; line-height: 1.8; }
+.stockpro-workspace small { color: #9aa2b4; font-weight: 400; }
+.stockpro-sidebar>span { display: block; padding: 9px 5px; color: #748098; }
+.stockpro-sidebar .stockpro-active { border-radius: 6px; background: #f0edff; color: #7058ed; font-weight: 700; }
+
+.stockpro-main { padding: 27px 20px; min-width: 0; }
+.stockpro-main>small { font-size: 6px; letter-spacing: 1px; color: #8793aa; }
+.stockpro-main h4 { margin: 8px 0 3px; font-size: 19px; letter-spacing: -.5px; }
+.stockpro-main>p { margin: 0; color: #8793aa; font-size: 8px; }
+.stockpro-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-top: 18px; }
+.stockpro-metrics>div { min-width: 0; padding: 11px 8px; border: 1px solid #ececf3; border-radius: 8px; background: #fff; }
+.stockpro-metrics small, .stockpro-metrics b, .stockpro-metrics span { display: block; }
+.stockpro-metrics small { font-size: 5px; letter-spacing: .5px; color: #9aa2b4; }
+.stockpro-metrics b { margin: 10px 0 3px; font-size: 17px; white-space: nowrap; }
+.stockpro-metrics span { color: #8793aa; font-size: 6px; }
+.stockpro-table { margin-top: 14px; padding: 10px; border-radius: 7px; background: #fff; color: #65718a; font-size: 6px; white-space: nowrap; overflow: hidden; }
+.stockpro-table>b { display: block; margin-bottom: 8px; color: #17233b; font-size: 10px; }
+.stockpro-table hr { border: 0; border-top: 1px solid #ececf3; }
+.stockpro-row { display: grid; grid-template-columns: 1.2fr 1fr .65fr .9fr; gap: 5px; align-items: center; padding: 10px 0; border-top: 1px solid #ececf3; font-size: 6px; }
+.stockpro-row strong { color: #26334b; }
+.stockpro-row b { color: #26334b; }
+.stockpro-row em { color: #d48025; font-style: normal; }
+
 .project-preview {
     min-height: 400px;
     padding: 32px 25px;
@@ -1131,9 +1192,30 @@ button {
 }
 
 .real-project-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.barber-preview {
+  flex-direction: column;
+}
+
+.barber-preview .real-project-link {
+  position: relative;
+  inset: auto;
   width: 85%;
-  height: 85%;
+  height: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.barber-preview .preview-tag {
+  position: static;
+  align-self: flex-start;
+  margin-top: 14px;
 }
 
 .real-project-image {
@@ -1458,6 +1540,18 @@ button {
         padding: 27px 13px;
         min-height: 290px
     }
+
+    .stockpro-preview { min-height: 360px; }
+    .stockpro-window { min-height: 300px; grid-template-columns: 25% 75%; }
+    .stockpro-sidebar { padding: 12px 7px; font-size: 6px; }
+    .stockpro-sidebar strong { font-size: 11px; }
+    .stockpro-sidebar>small { margin-left: 0; font-size: 4px; }
+    .stockpro-main { padding: 15px 10px; }
+    .stockpro-main h4 { font-size: 15px; }
+    .stockpro-metrics { gap: 4px; margin-top: 12px; }
+    .stockpro-metrics>div { padding: 7px 5px; }
+    .stockpro-metrics b { font-size: 12px; }
+    .stockpro-row { gap: 3px; padding: 7px 0; font-size: 5px; }
 
     .barber-site {
         min-height: 230px;
